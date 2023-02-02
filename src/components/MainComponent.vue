@@ -3,8 +3,6 @@ import LeftSideComponent from '../components/LeftSiddeComponent.vue'
 import MarsComponent from '../components/MarsComponent.vue'
 import RightSideComponent from '../components/RightSideComponent.vue'
 
-
-
 </script>
 
 <template>
@@ -15,7 +13,7 @@ import RightSideComponent from '../components/RightSideComponent.vue'
     </div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 
 .container {
   max-width: 1170px;
@@ -25,6 +23,14 @@ import RightSideComponent from '../components/RightSideComponent.vue'
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+img { 
+  pointer-events: none; 
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
 }
 
 </style>

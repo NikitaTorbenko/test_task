@@ -2,8 +2,6 @@
 import HeaderComponent from "../src/components/HeaderComponent.vue";
 import MainComponent from "../src/components/MainComponent.vue";
 
-alert('По макету такое ощущение что все размеры текста больше, но на самом деле размеры шрифта вполне обычные. И все таки хотелось сделать больше :)')
-
 </script>
 
 <template>
