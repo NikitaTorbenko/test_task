@@ -8,7 +8,7 @@ import RightSideComponent from '../components/RightSideComponent.vue'
 <template>
     <div class="container">
         <LeftSideComponent/>
-        <MarsComponent/>
+        <!-- <MarsComponent/> -->
         <RightSideComponent/> 
     </div>
 </template>
@@ -32,5 +32,25 @@ img {
     -ms-user-select: none; 
     user-select: none;
 }
+
+@media (max-width: 1400px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media (max-width:726px) {
+  .container {
+    width: 375px;
+    flex-direction: column;
+  }
+}
+
 
 </style>

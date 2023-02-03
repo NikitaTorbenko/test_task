@@ -38,6 +38,12 @@
   margin: 0 auto;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header {
   border: 1px solid rgba(255, 255, 255, 0.2);
   height: 100px;
@@ -45,12 +51,11 @@
 
 .logo {
   height: 100px;
-}
 
-.flex-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .menu {
@@ -89,6 +94,46 @@
     &:hover {
         color: rgba(255, 255, 255, 0.6)
     }
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 720px;
+  }
+  .menu {
+    flex-wrap: wrap;
+
+    &__item {
+      margin: 15px 20px;
+    }
+  }
+}
+
+@media (max-width: 726px) {
+  .container {
+    width: 375px;
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+  .header {
+    height: auto;
+  }
+  .menu {
+    width: 400px;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 400px) {
+  .menu {
+    width: 375px;
   }
 }
 </style>

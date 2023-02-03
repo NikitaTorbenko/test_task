@@ -24,7 +24,6 @@
 .title {
     font-size: 3rem;
     text-transform: uppercase;
-    // letter-spacing: .2rem;
     margin: 0 0 90px;
     font-weight: 800;
     font-family: 'Roboto', sans-serif;
@@ -56,5 +55,28 @@
     }
 }
 // ====LEFT SIDE END=====
+
+@media (max-width: 726px) {
+    
+    .title {
+        margin: 20px 0 25px;
+        text-align: center;
+        font-size: 2.8rem;
+        line-height: .9;
+    }
+    .gradient {
+        background-image: linear-gradient(240deg, white, rgb(215, 54, 0)); 
+    }
+    .btn {
+        margin-left: 100px;
+        background-color: rgba(0, 0, 0, .3);
+    }
+}
+
+@media (max-width: 400px) {
+    .title {
+        font-size: 2.5rem;
+    }
+}
 
 </style>

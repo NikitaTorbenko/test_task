@@ -126,4 +126,39 @@
     );
   }
 }
+
+@media (max-width: 726px) {
+  .right-side{
+    margin-top: 20px;
+    grid-template-columns: 134px 134px;
+    grid-template-rows: 152px 152px;
+    grid-gap: 8px;
+
+  }
+  .grid_item {
+    line-height: 1.5;
+
+  }
+}
+
+@media (max-width: 400px) {
+  .right-side{
+    margin-top: 18px;
+    grid-template-columns: 110px 110px;
+    grid-template-rows: 125px 125px;
+    grid-gap: 8px;
+
+  }
+  .grid_item {
+    line-height: 1.6;
+  }
+.grid__text {
+  font-size: .9rem;
+}
+
+.numbers {
+  font-size: 2rem;
+}
+
+}
 </style>
